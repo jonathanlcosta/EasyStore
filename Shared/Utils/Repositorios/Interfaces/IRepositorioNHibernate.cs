@@ -11,5 +11,11 @@ namespace Autoglass.Autoplay.Dominio.Utils.Repositorios.Interfaces
         T Recuperar(int id);
         IQueryable<T> Query();
         PaginacaoConsulta<T> Listar(IQueryable<T> query, int qt, int pg, string cpOrd, TipoOrdenacaoEnum tpOrd);
+        Task<T> RecuperarAsync(int id);
+        Task<T> InserirAsync(T entidade);
+        Task<T> EditarAsync(T entidade);
+        Task ExcluirAsync(T entidade);
+        Task<IQueryable<T>> QueryAsync();
+        
     }
 }

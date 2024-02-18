@@ -6,4 +6,10 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="3.3.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.12" />
+
+  </ItemGroup>
+
 </Project>

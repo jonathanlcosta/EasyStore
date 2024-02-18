@@ -1,7 +1,7 @@
-using EasyStore.Clientes.API.Models.Clientes;
+using EasyStore.Clientes.API.Clientes.Models;
 using Shared.Utils.Entidades;
 
-namespace EasyStore.Clientes.API.Models.Enderecos
+namespace EasyStore.Clientes.API.Enderecos.Models
 {
     public class Endereco : EntidadeBase
     {
@@ -24,6 +24,8 @@ namespace EasyStore.Clientes.API.Models.Enderecos
             SetCidade(cidade);
             SetEstado(estado);
         }
+
+        protected Endereco(){}
 
         private void SetEstado(string estado)
         {

@@ -1,5 +1,5 @@
 using System.Text.RegularExpressions;
-using EasyStore.Clientes.API.Models.Clientes;
+using EasyStore.Clientes.API.Clientes.Models;
 using EasyStore.Shared.Dominio.Utils.Excecoes;
 using Shared.Utils.Entidades;
 
@@ -15,7 +15,7 @@ namespace EasyStore.Clientes.API.Models.Emails
             SetCliente(cliente);
         }
 
-        public Email(){}
+        protected Email(){}
 
         public virtual void SetEndereco(string endereco)
         {
