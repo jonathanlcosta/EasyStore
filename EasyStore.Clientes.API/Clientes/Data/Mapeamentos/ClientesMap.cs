@@ -14,8 +14,8 @@ namespace EasyStore.Clientes.API.Clientes.Data.Mapeamentos
             Map(x => x.Nome, "nome");
             Map(x => x.Celular, "celular");
             Map(x => x.Ativo, "ativo").CustomType<AtivoInativoEnum>();
-            HasOne(x => x.Endereco).PropertyRef(x => x.Cliente).Cascade.DeleteOrphan();
-            HasOne(x => x.Email).PropertyRef(x => x.Cliente).Cascade.DeleteOrphan();
+            HasOne(x => x.Endereco).Cascade.All();
+            HasOne(x => x.Email).Cascade.All();
         }
     }
 }
